@@ -1,0 +1,52 @@
+a:link {
+	color: black;
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a:active {
+	color: black;
+	text-decoration: none;
+}
+
+#navbar-left {
+	font-family: 'Bebas Neue', cursive;
+	color: black;
+	display: inline-block;
+	padding-right: 20px;
+	padding-left: 50px;
+	text-align: left;
+}
+
+#navbar-right {
+	font-family: 'Bebas Neue', cursive;
+	color: black;
+	display: inline-block;
+	padding-right: 50px;
+	padding-left: 20px;
+	text-align: left;
+}
+
+.navbar {
+	font-family: 'Bebas Neue', cursive;
+	color: black;
+	display: inline-block;
+	padding-right: 50px;
+	padding-left: 50px;
+	text-align: left;
+}
+
+.homecontainer {
+	position: relative;
+	text-align: center;
+}
+
+.hometext {
+	position: absolute;
+	top: 60px;
+	left: 70px;
+}
