@@ -1,3 +1,8 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
 a:link {
 	color: black;
 	text-decoration: none;
@@ -13,30 +18,41 @@ a:active {
 	text-decoration: none;
 }
 
-#navbar-left {
+.navbarText {
 	font-family: 'Bebas Neue', cursive;
+	font-size: 35px;
+	letter-spacing: 1px;
 	color: black;
+	border: 4px solid transparent;
+	padding: 6px;
+}
+
+.navbarText:hover {
+	border: 4px solid black;
+}
+
+#navbar-left {
 	display: inline-block;
-	padding-right: 20px;
-	padding-left: 50px;
+	padding-right: 20vh;
+	padding-left: 5vh;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
 	text-align: left;
 }
 
 #navbar-right {
-	font-family: 'Bebas Neue', cursive;
-	color: black;
 	display: inline-block;
-	padding-right: 50px;
-	padding-left: 20px;
+	padding-right: 5vh;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
 	text-align: left;
 }
 
 .navbar {
-	font-family: 'Bebas Neue', cursive;
-	color: black;
 	display: inline-block;
-	padding-right: 50px;
-	padding-left: 50px;
+	padding-right: 33vh;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
 	text-align: left;
 }
 
@@ -46,7 +62,47 @@ a:active {
 }
 
 .hometext {
+	font-family: 'Baskervville', serif;
+	font-size: 60px;
+	line-height: 100px;
+	text-align: left;
+	color: white;
 	position: absolute;
 	top: 60px;
-	left: 70px;
+	left: 100px;
+	width: 75%;
+}
+
+.footer {
+	margin-top: 1.5%;
+	background: black;
+	font-family: 'Bebas Neue', cursive;
+	color: white;
+}
+
+#flogo {
+	display: inline-block;
+	float: left;
+	font-size: 35px;
+	padding-left: 5vh;
+	padding-top: 5vh;
+	padding-right: 50vh;
+	letter-spacing: 1px;
+}
+
+.fcontainers {
+	display: inline-block;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+	padding-left: 25vh;
+}
+
+.ftext {
+	float: left;
+	font-size: 20px;
+	line-height: 2.5;
+}
+
+.fheader {
+	font-size: 25px;
 }
