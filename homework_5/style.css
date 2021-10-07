@@ -19,7 +19,7 @@ a:active {
 }
 
 .navbarText {
-	font-family: 'Bebas Neue', cursive;
+	font-family: 'Bebas Neue';
 	font-size: 35px;
 	letter-spacing: 1px;
 	color: black;
@@ -35,25 +35,30 @@ a:active {
 	display: inline-block;
 	padding-right: 20vh;
 	padding-left: 5vh;
-	padding-top: 1vh;
-	padding-bottom: 1vh;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
 	text-align: left;
 }
 
 #navbar-right {
 	display: inline-block;
 	padding-right: 5vh;
-	padding-top: 1vh;
-	padding-bottom: 1vh;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
 	text-align: left;
 }
 
 .navbar {
 	display: inline-block;
 	padding-right: 33vh;
-	padding-top: 1vh;
-	padding-bottom: 1vh;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
 	text-align: left;
+}
+
+#currentTabBox {
+	border: 4px solid black;
+	padding: 6px;
 }
 
 .homecontainer {
@@ -69,14 +74,40 @@ a:active {
 	color: white;
 	position: absolute;
 	top: 60px;
-	left: 100px;
+	left: 70px;
 	width: 75%;
 }
 
+.productContainer {
+	display: flex;
+	flex-wrap: wrap;
+  	position: relative;
+}
+
+.productContainer .imageContainer {
+	width: 50%;
+}
+
+.productContainer img {
+	width: 100%;
+	height: 100%;
+}
+
+.hoverBox {
+	display: inline-block;
+	position: absolute;
+}
+
+.hoverBox-text {
+	display: none;
+}
+
 .footer {
+	display: inline-block;
+	width: 100%;
 	margin-top: 1.5%;
 	background: black;
-	font-family: 'Bebas Neue', cursive;
+	font-family: 'Bebas Neue';
 	color: white;
 }
 
