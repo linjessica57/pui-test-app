@@ -16,6 +16,22 @@ let box1 = document.getElementById('product1selector');
 // 	colorselected = false;
 // }
 
+box1.addEventListener('click', changeClass);
+
+// if (colorselected == false) {
+// 	box1.addEventListener('click', product1pic);
+// 	box1.addEventListener('click', changeClass);
+// 	colorselected = true;
+// } else if (colorselected == true) {
+// 	//box1.removeEventListener('click', product1pic);
+// 	//box1.addEventListener('click', changeClass);
+// 	colorselected = false;
+// }
+
+function changeClass() {
+	box1.classList.toggle("navbarText-selected");
+}
+
 console.log(colorselected);
 
 function product1pic() {
