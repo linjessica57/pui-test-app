@@ -3,54 +3,35 @@ let img2 = document.getElementById('product2');
 let img3 = document.getElementById('product3');
 let img4 = document.getElementById('product4');
 
-let colorselected = false;
+let color = document.getElementsByClassName('colorChoices')
+for (let i = 0; i < color.length; i++) {
+  	color[i].addEventListener("click", function() {
 
-let box1 = document.getElementById('product1selector');
+    let selectedcol = document.querySelector(".colorChoices-selected");
 
-// if (colorselected == false) {
-// 	box1.addEventListener('click', product1pic);
-// 	colorselected = true;
-// } else if (colorselected == true) {
-// 	box1.removeEventListener('click', product1pic);
-// 	box1.addEventListener('click', deselect);
-// 	colorselected = false;
-// }
+    if (selectedcol && selectedcol !== this) {
+      selectedcol.classList.remove("colorChoices-selected");
+    }
 
-box1.addEventListener('click', changeClass);
+    this.classList.toggle("colorChoices-selected");
 
-// if (colorselected == false) {
-// 	box1.addEventListener('click', product1pic);
-// 	box1.addEventListener('click', changeClass);
-// 	colorselected = true;
-// } else if (colorselected == true) {
-// 	//box1.removeEventListener('click', product1pic);
-// 	//box1.addEventListener('click', changeClass);
-// 	colorselected = false;
-// }
-
-function changeClass() {
-	box1.classList.toggle("navbarText-selected");
+  }, false);
 }
 
-console.log(colorselected);
+let fill = document.getElementsByClassName('fillChoices')
+for (let i = 0; i < fill.length; i++) {
+  fill[i].addEventListener("click", function() {
 
-function product1pic() {
-	box1.style.border = "4px solid black";
-	img2.style.display = "none";
-	img3.style.display = "none";
-	img4.style.display = "none";
+    let selectedfill = document.querySelector(".fillChoices-selected");
+
+    if (selectedfill && selectedfill !== this) {
+      selectedfill.classList.remove("fillChoices-selected");
+    }
+
+    this.classList.toggle("fillChoices-selected");
+
+  }, false);
 }
-
-function deselect() {
-	box1.style.border = "4px solid transparent";
-	img2.style.display = "block";
-	img3.style.display = "block";
-	img4.style.display = "block";
-	// colorselected = false;
-	// console.log(colorselected);
-	// return colorselected;
-}
-
 
 
 function Product(name, color, fill, price, inCart) {
